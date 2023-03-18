@@ -1,0 +1,40 @@
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width: 300px;
+    height: 213px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  
+    /* transition: 1s all; 
+ transform: scale(1.2);  */
+}
+.container img{
+    width: 100%;
+    transition: 0.5s all;
+    transform: scale(1.2);
+}
+
+.round{
+    background-color: #0181f5;
+    width: 189px;
+    height: 158px;
+     position: absolute;
+    
+    top: 124px;
+border-radius: 50%;
+    right: 148px;
+    
+    display: none;
+
+}
+.container:hover .round{
+    display: block;
+}
+.container:hover img{
+    transform: scale(1);
+}
+ 
